@@ -4,7 +4,39 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    list: [
+      {
+        id: 0,
+        name: "美食诱惑",
+        desc: "汇集各种美食"
+      },
+      {
+        id: 1,
+        name: "健康养生",
+        desc: "养生之道乐在其中"
+      },
+      {
+        id: 2,
+        name: "休闲娱乐",
+        desc: "放空一下自己"
+      },
+      {
+        id: 3,
+        name: "亲子游乐",
+        desc: "亲子开心乐园"
+      },
+      {
+        id: 4,
+        name: "精美礼物",
+        desc: "超赞节日礼物"
+      },
+      {
+        id: 4,
+        name: "小城酒店",
+        desc: "舒适干净定位"
+      }
+    ],
+    src: "../../static/images/bg.jpg",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

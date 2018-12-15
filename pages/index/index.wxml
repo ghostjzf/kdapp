@@ -1,6 +1,14 @@
 <!--index.wxml-->
-<view class="container">
+<view class="home">
+  <image class='home-bg' src='{{src}}' mode="aspectFill"></image>
+  <view class='home-nav flex flex-wrap'>
+    <view class='home-nav-item flex-column flex-center' wx:for="{{list}}" wx:key="{{index}}">
+      <view>{{item.name}}</view>
+      <view class='desc'>{{item.desc}}</view>
+    </view>
+  </view>
   <view>
-    <input></input>
+    <view>今日推荐</view>
+    <view>推荐XXXXXXXX</view>
   </view>
 </view>

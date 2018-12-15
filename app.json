@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/health/health",
     "pages/user/user"
   ],
   "window":{
@@ -15,10 +14,6 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/health/health",
-        "text": "养生"
       },
       {
         "pagePath": "pages/user/user",
