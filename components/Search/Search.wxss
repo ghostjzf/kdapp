@@ -1,0 +1,29 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  background-color: #f8f8f8;
+  padding: 20rpx 0;
+}
+
+.search-input {
+  width: calc(100% - 25rpx);
+  border-radius: 30px;
+  background-color: #ffffff;
+  margin: 0 20rpx;
+  padding-left: 25rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+}
+
+.placeholderSty {
+  font-size: 26rpx;
+  color: #999999;
+}
+
+.cancel {
+  width: 120rpx;
+  text-align: center;
+  color: #e27611;
+}

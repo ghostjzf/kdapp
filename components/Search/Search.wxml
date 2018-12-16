@@ -1,0 +1,10 @@
+<view class="search">
+  <input 
+    class='search-input' 
+    placeholder-class='placeholderSty' 
+    placeholder='请输入搜索内容' 
+    bindinput="bindinput"
+    bindconfirm='bindconfirm'
+  ></input>
+  <view class="cancel" bindtap='back'>{{text}}</view>
+</view>
