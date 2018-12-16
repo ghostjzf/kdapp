@@ -13,10 +13,7 @@
 .search-input {
   border-radius: 30px;
   background-color: #ffffff;
-  padding: 5rpx 25rpx;
-}
-
-.placeholderSty {
+  padding: 12rpx 25rpx;
   font-size: 26rpx;
   color: #999999;
 }
