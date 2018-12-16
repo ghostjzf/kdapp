@@ -1,1 +1,28 @@
 /* moudleFood/pages/index/index.wxss */
+.food {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.search {
+  font-size: 30rpx;
+  background-color: #f8f8f8;
+  padding: 20rpx;
+}
+
+.search-input {
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 5rpx 25rpx;
+}
+
+.placeholderSty {
+  font-size: 26rpx;
+  color: #999999;
+}
+
+.list-item {
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}

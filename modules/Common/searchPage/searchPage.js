@@ -1,4 +1,4 @@
-// moudleFood/pages/index/index.js
+// modules/Common/searchPage/searchPage.js
 Page({
 
   /**
@@ -6,15 +6,23 @@ Page({
    */
   data: {
     list: [
-      { title: "德克士", money: 200 },
-      { title: "老范", money: 300 }
+      { name: "德克士" },
+      { name: "老范烧烤" },
+      { name: "南市场小吃" },
+      { name: "正新鸡排" },
+      { name: "串流不息" },
+      { name: "涮涮旺" }
     ]
   },
 
-  bindInputClick() {
-    wx.navigateTo({
-      url: '../../../Common/searchPage/searchPage',
-    })
+  bindinput(e) {
+    console.log(e)
+  },
+  bindconfirm(e) {
+    console.log(e)
+  },
+  select(e) {
+    console.log(e.currentTarget.dataset.name)
   },
 
   /**

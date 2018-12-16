@@ -1,0 +1,6 @@
+<view class="search-page">
+  <Search bind:bindinput="bindinput" bind:bindconfirm="bindconfirm" />
+  <view class='flex flex-wrap recommend-list'>
+    <view class='recommend-item' wx:for="{{list}}" wx:key="{{index}}" data-name='{{item.name}}' bindtap='select'>{{item.name}}</view>
+  </view>
+</view>

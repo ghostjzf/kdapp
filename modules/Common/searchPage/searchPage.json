@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "美食诱惑",
+  "navigationBarTitleText": "搜索",
   "usingComponents": {
     "Search": "../../../components/Search/Search"
   }

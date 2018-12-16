@@ -1,2 +1,8 @@
-<!--moudleFood/pages/index/index.wxml-->
-<text>moudleFood/pages/index/index.wxml</text>
+<view class='food'>
+  <view class="search">
+    <input class='search-input' placeholder-class='placeholderSty' placeholder='请输入搜索内容' bindtap='bindInputClick'></input>
+  </view>
+  <view class='list'>
+    <view class='list-item' wx:for="{{list}}" wx:key="{{index}}">{{item.title}}</view>
+  </view>
+</view>
