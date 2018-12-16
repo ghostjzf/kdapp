@@ -11,6 +11,46 @@
         "pages/index/index"
       ],
       "independent": true
+    },
+    {
+      "root": "modules/Health",
+      "name": "health",
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "modules/Rest",
+      "name": "rest",
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "modules/Parenting",
+      "name": "parenting",
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "modules/Gift",
+      "name": "gift",
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "modules/Hotel",
+      "name": "hotel",
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
     }
   ],
   "window": {
