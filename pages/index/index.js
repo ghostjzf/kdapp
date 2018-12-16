@@ -8,31 +8,37 @@ Page({
       {
         id: 0,
         name: "美食诱惑",
+        navpath: "../../modules/Food/pages/index/index",
         desc: "汇集各种美食"
       },
       {
         id: 1,
         name: "健康养生",
+        navpath: "../../modules/Food/pages/index/index",
         desc: "养生之道乐在其中"
       },
       {
         id: 2,
         name: "休闲娱乐",
+        navpath: "../../modules/Food/pages/index/index",
         desc: "放空一下自己"
       },
       {
         id: 3,
         name: "亲子游乐",
+        navpath: "../../modules/Food/pages/index/index",
         desc: "亲子开心乐园"
       },
       {
         id: 4,
         name: "精美礼物",
+        navpath: "../../modules/Food/pages/index/index",
         desc: "超赞节日礼物"
       },
       {
-        id: 4,
+        id: 5,
         name: "小城酒店",
+        navpath: "../../modules/Food/pages/index/index",
         desc: "舒适干净定位"
       }
     ],
@@ -41,10 +47,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
+  navigage(e) {
+    let index = e.currentTarget.dataset.index;
+
     wx.navigateTo({
-      url: '../logs/logs'
+      url: this.data.list[index].navpath,
     })
   },
   onLoad: function () {

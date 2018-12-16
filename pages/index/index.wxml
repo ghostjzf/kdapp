@@ -2,7 +2,7 @@
 <view class="home">
   <image class='home-bg' src='{{src}}' mode="aspectFill"></image>
   <view class='home-nav flex flex-wrap'>
-    <view class='home-nav-item flex-column flex-center' wx:for="{{list}}" wx:key="{{index}}">
+    <view class='home-nav-item flex-column flex-center' wx:for="{{list}}" wx:key="{{index}}" data-index='{{index}}' bindtap='navigage'>
       <view>{{item.name}}</view>
       <view class='desc'>{{item.desc}}</view>
     </view>
