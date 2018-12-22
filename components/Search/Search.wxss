@@ -15,6 +15,7 @@
   padding-left: 25rpx;
   padding-top: 5rpx;
   padding-bottom: 5rpx;
+  height: 60rpx;
 }
 
 .placeholderSty {
