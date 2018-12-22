@@ -6,14 +6,36 @@ Page({
    */
   data: {
     list: [
-      { title: "德克士", money: 200 },
-      { title: "老范", money: 300 }
+      { 
+        id: 0,
+        title: "德克士", 
+        image: "../../../../static/images/dicos.jpeg", 
+        address: "中心路",
+        types: "快餐",
+        money: 200 
+      },
+      { 
+        id: 1,
+        title: "老范", 
+        image: "../../../../static/images/dicos.jpeg", 
+        address: "中心路",
+        types: "烧烤",
+        money: 300 }
     ]
   },
 
   bindInputClick() {
     wx.navigateTo({
       url: '../../../Common/searchPage/searchPage',
+    })
+  },
+
+  // 详情
+  detailView(ev) {
+    const detail = ev.currentTarget.dataset.item
+
+    wx.navigateTo({
+      url: '../detail/detail?id=' + detail.id + "&title=" + detail.title,
     })
   },
 

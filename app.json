@@ -5,10 +5,18 @@
   ],
   "subpackages": [
     {
+      "root": "modules/Common",
+      "name": "common",
+      "pages": [
+        "searchPage/searchPage"
+      ]
+    },
+    {
       "root": "modules/Food",
       "name": "food",
       "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/detail/detail"
       ],
       "independent": true
     },
@@ -56,7 +64,6 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

@@ -1,35 +1,26 @@
-// modules/Common/searchPage/searchPage.js
+// modules/Food/pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      { name: "德克士" },
-      { name: "老范烧烤" },
-      { name: "南市场小吃" },
-      { name: "正新鸡排" },
-      { name: "串流不息" },
-      { name: "涮涮旺" }
-    ]
+
   },
 
-  bindinput(e) {
-    console.log(e)
-  },
-  bindconfirm(e) {
-    console.log(e)
-  },
-  select(e) {
-    console.log(e.currentTarget.dataset.name)
+  getDetail(id) {
+    console.log(id)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.getDetail(options.id);
+
+    wx.setNavigationBarTitle({
+      title: options.title
+    })
   },
 
   /**
