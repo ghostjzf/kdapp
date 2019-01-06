@@ -3,6 +3,15 @@
   background-color: #f8f8f8;
 }
 
+.search-result-list{
+  background-color: #fff;
+}
+
+.search-item {
+  padding: 15rpx 20rpx;
+  border-bottom: 1px #ececec dashed;
+}
+
 .recommend-list {
   font-size: 26rpx;
   background-color: #ffffff;

@@ -1,3 +1,5 @@
+const HOST = "http://localhost:9999";
+
 class Http {
   state = {
     method: {
@@ -9,19 +11,20 @@ class Http {
   }
 
   get = (url, data, config) => {
-    request(url, data, config, this.state.method.GET)
+    return request(url, data, config, this.state.method.GET)
   }
 
   post = (url, data, config) => {
-    request(url, data, config, this.state.method.POST)
+    console.log(request(url, data, config, this.state.method.POST))
+    return request(url, data, config, this.state.method.POST)
   }
 
   put = (url, data, config) => {
-    request(url, data, config, this.state.method.PUT)
+    return request(url, data, config, this.state.method.PUT)
   }
 
   delete = (url, data, config) => {
-    request(url, data, config, this.state.method.DELETE)
+    return request(url, data, config, this.state.method.DELETE)
   }
 }
 
@@ -48,24 +51,24 @@ function request(url, data, config, method) {
     Object.assign(header, config.header)
   }
 
-  return new Promise((resovle, reject) => {
+  return new Promise((resolve, reject) => {
     wx.request({
-      url: url,
+      url: HOST + url,
       data: data,
       method: method,
       header: header,
       success: (res) => {
-        let data = res.data;
+        const result = res.data;
 
-        if (data && typeof data === 'object') {
-          if (('code' in data && data.code !== 200) || ('status' in data && data.status !== 'ok')) {
-            createError(reject, res);
+        if (res.statusCode === 200) {
+          if (result.code !== "000000" || result.msg !== "success") {
+            createError(reject, result);
+
+            return
           }
 
-          return
+          resolve(result)
         }
-
-        resolve(res)
       },
       fail: (error) => {
         createError(reject, error)
@@ -76,7 +79,6 @@ function request(url, data, config, method) {
 
 function createError(reject, error) {
   if (error) {
-    console.log(error);
     reject(error)
   }
 }

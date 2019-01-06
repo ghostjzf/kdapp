@@ -12,11 +12,19 @@ Page({
       { name: "正新鸡排" },
       { name: "串流不息" },
       { name: "涮涮旺" }
-    ]
+    ],
+    searchList: [{ name: "dd" }, { name: "cc" }]
   },
 
   bindinput(e) {
-    console.log(e)
+    console.log(e);
+    const value = e.detail.value;
+
+    if (value === "") {
+      this.setData({
+        searchList: []
+      })
+    }
   },
   bindconfirm(e) {
     console.log(e)
