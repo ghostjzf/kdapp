@@ -1,5 +1,9 @@
-export const HOST = ['http://172.25.6.162:9999', 'https://kd-api.kdcity.com'];
+import { SSO } from "./apis/SSO.js"
+import { KD } from "./apis/KD.js"
+
+export const HOST = ['https://kd-api-test.kdcity.com', 'https://kd-api.kdcity.com'];
 
 export const API = {
-  "storeList": "/api/customer/store/list"
+  SSO,
+  KD
 };

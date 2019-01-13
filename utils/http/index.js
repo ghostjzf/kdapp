@@ -1,5 +1,4 @@
-// const HOST = "http://172.25.6.162:9999"; 
-const HOST = "http://192.168.0.100:9999";
+const HOST = "http://localhost:9999";
 
 class Http {
   state = {
@@ -16,6 +15,7 @@ class Http {
   }
 
   post = (url, data, config) => {
+    console.log(request(url, data, config, this.state.method.POST))
     return request(url, data, config, this.state.method.POST)
   }
 
@@ -44,7 +44,7 @@ const ERROR_MSG = {
 
 function request(url, data, config, method) {
   let header = {
-    'content-type': 'application/x-www-form-urlencoded'
+    'content-type': 'application/json'
   }
 
   if (typeof config !== "undefined" && config.header) {
@@ -61,7 +61,7 @@ function request(url, data, config, method) {
         const result = res.data;
 
         if (res.statusCode === 200) {
-          if (result.code !== 200) {
+          if (result.code !== "000000" || result.msg !== "success") {
             createError(reject, result);
 
             return

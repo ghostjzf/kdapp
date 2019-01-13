@@ -1,8 +1,8 @@
 <view class="detail">
-  <image class='img' src='http://192.168.0.100:9999/api/customer{{detail.image}}?phoneno={{detail.phoneno}}' mode="aspectFill"></image>
+  <image class='img' src='../../../../static/images/dicos.jpeg' mode="aspectFill"></image>
   <view class='content'>
     <view class='info'>
-      <view>{{detail.name}}</view>
+      <view>德克士</view>
       <view class='evaluate'>
         <text>726条</text>
         <text>￥126/人</text>
@@ -12,11 +12,11 @@
         <text class='score-item'>环境：9.4分</text>
         <text class='score-item'>服务：9.3分</text>
       </view>
-      <view class='address'>地址：{{detail.address}}</view>
+      <view class='address'>中山路XXXX店南侧</view>
     </view>
 
     <view class='recommend'>
-      <view class='title'>精品推荐</view>
+      <view>推荐</view>
       <scroll-view class="scroll-view" scroll-x style="width: 100%">
         <view class="item" wx:for="{{[1,2,3,4]}}" wx:key="{{index}}">
           <image class='img' src='../../../../static/images/dicos.jpeg' mode="aspectFill"></image>
