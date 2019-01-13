@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    detail: {}
   },
 
   getDetail(id) {
@@ -16,10 +16,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getDetail(options.id);
+    const detail = JSON.parse(options.detail);
 
-    wx.setNavigationBarTitle({
-      title: options.title
+    this.setData({
+      detail
     })
   },
 
