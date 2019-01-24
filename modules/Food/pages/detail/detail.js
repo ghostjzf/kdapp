@@ -1,15 +1,33 @@
 // modules/Food/pages/detail/detail.js
+import http from "../../../../utils/http/index.js";
+import { API } from "../../../../utils/API/index.js"
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    detail: {}
+    detail: {},
+    list: []
   },
 
   getDetail(id) {
     console.log(id)
+  },
+
+  getList() {
+    http.get(API.recoomend, {
+      phoneno: this.data.detail.phoneno
+    }).then(resp => {
+      console.log(resp);
+
+      this.setData({
+        list: resp.data.items
+      })
+    }).catch(error => {
+
+    })
   },
 
   /**
@@ -20,6 +38,8 @@ Page({
 
     this.setData({
       detail
+    }, () => {
+      this.getList();
     })
   },
 

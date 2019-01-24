@@ -8,23 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [
-      { 
-        id: 0,
-        title: "德克士", 
-        image: "../../../../static/images/dicos.jpeg", 
-        address: "中心路",
-        types: "快餐",
-        money: 200 
-      },
-      { 
-        id: 1,
-        title: "老范", 
-        image: "../../../../static/images/dicos.jpeg", 
-        address: "中心路",
-        types: "烧烤",
-        money: 300 }
-    ]
+    list: []
   },
 
   bindInputClick() {
@@ -60,7 +44,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getList();
   },
 
   /**
