@@ -1,42 +1,11 @@
-// modules/Rest/pages/index/index.js
+// modules/Beauty/pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navlist: [
-      {
-        name: "全部"
-      },
-      {
-        name: "KTV"
-      },
-      {
-        name: "网咖"
-      },
-      {
-        name: "电影院"
-      },
-      {
-        name: "台球厅"
-      },
-      {
-        name: "电玩"
-      },
-      {
-        name: "酒吧"
-      },
-      {
-        name: "公园"
-      },
-      {
-        name: "旅行"
-      },
-      {
-        name: "钓鱼"
-      }
-    ]
+
   },
 
   /**

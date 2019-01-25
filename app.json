@@ -59,6 +59,14 @@
         "pages/index/index"
       ],
       "independent": true
+    },
+    {
+      "root": "modules/Beauty",
+      "name": "beauty",
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
     }
   ],
   "window": {

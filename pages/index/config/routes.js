@@ -34,5 +34,11 @@ export const list = [
     name: "小城酒店",
     navpath: "../../modules/Hotel/pages/index/index",
     desc: "舒适干净定位"
+  },
+  {
+    id: 6,
+    name: "美容美发",
+    navpath: "../../modules/Beauty/pages/index/index",
+    desc: "美容美发"
   }
 ]

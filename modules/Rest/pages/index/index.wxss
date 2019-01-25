@@ -1,1 +1,12 @@
 /* modules/Rest/pages/index/index.wxss */
+.scroll-view {
+  width: 100%;
+  display: flex;
+  white-space: nowrap; 
+  -webkit-overflow-scrolling: touch;
+}
+.nav-item {
+   display: inline-block;
+   padding: 2px 20rpx;
+   font-size: 32rpx;
+}

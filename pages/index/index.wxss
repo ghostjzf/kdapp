@@ -40,7 +40,7 @@ page {
 .home-nav-item {
   width: calc(100vw/3);
   text-align: center;
-  height: calc(100vw/3);
+  height: calc(33vw);
   margin-bottom: 10px;
   background-color: #fff;
   font-size: 30rpx;

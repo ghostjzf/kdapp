@@ -7,8 +7,4 @@
       <view class='desc'>{{item.desc}}</view>
     </view>
   </view>
-  <view>
-    <view>今日推荐</view>
-    <view>推荐XXXXXXXX</view>
-  </view>
 </view>

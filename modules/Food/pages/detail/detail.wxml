@@ -2,9 +2,9 @@
   <image class='img' src='http://172.25.6.91:9999/api/customer{{detail.image}}?phoneno={{detail.phoneno}}' mode="aspectFill"></image>
   <view class='content'>
     <view class='info'>
-      <view>{{detail.name}}</view>
-      <view class='evaluate'>
-        <text>726条</text>
+      <view class='store-name'>{{detail.name}}</view>
+      <view class='pay-level'>
+        <text>消费水平：</text>
         <text>￥126/人</text>
       </view>
       <view class='score'>

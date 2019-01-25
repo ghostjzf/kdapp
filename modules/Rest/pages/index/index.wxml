@@ -1,2 +1,5 @@
-<!--modules/Rest/pages/index/index.wxml-->
-<text>modules/Rest/pages/index/index.wxml</text>
+<view class="container">
+  <scroll-view class="scroll-view" scroll-x style="width: 100%">
+    <view class='nav-item' wx:for="{{navlist}}" wx:key="{{index}}">{{item.name}}</view>
+  </scroll-view>
+</view>

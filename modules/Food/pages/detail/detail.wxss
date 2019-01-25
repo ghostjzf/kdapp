@@ -22,6 +22,14 @@
   color: #888888;
 }
 
+.pay-level {
+  font-size: 28rpx;
+}
+
+.store-name {
+  margin-bottom: 20rpx
+}
+
 .score-item {
   margin-right: 20rpx;
 }
@@ -37,36 +45,6 @@
   padding: 20rpx;
   background-color: #fff;
   margin-top: 20rpx;
-}
-
-.recommend .title {
-  margin-bottom: 20rpx;
-  font-size: 34rpx;
-}
-
-.recommend .title {
-  margin-bottom: 20rpx;
-  font-size: 34rpx;
-}
-
-.recommend .title {
-  margin-bottom: 20rpx;
-  font-size: 34rpx;
-}
-
-.recommend .title {
-  margin-bottom: 20rpx;
-  font-size: 34rpx;
-}
-
-.recommend .title {
-  margin-bottom: 20rpx;
-  font-size: 34rpx;
-}
-
-.recommend .title {
-  margin-bottom: 20rpx;
-  font-size: 34rpx;
 }
 
 .recommend .title {
