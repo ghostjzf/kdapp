@@ -1,4 +1,7 @@
 // modules/Rest/pages/index/index.js
+import http from "../../../../utils/http/index.js";
+import { API } from "../../../../utils/API/index.js"
+
 Page({
 
   /**
@@ -36,14 +39,29 @@ Page({
       {
         name: "钓鱼"
       }
-    ]
+    ],
+    list: []
+  },
+
+  getList() {
+    http.get(API.storeList, {
+      type: "休闲娱乐"
+    }).then(resp => {
+      console.log(resp);
+
+      this.setData({
+        list: resp.data
+      })
+    }).catch(error => {
+
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getList();
   },
 
   /**

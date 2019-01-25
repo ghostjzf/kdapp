@@ -19,9 +19,9 @@ export const list = [
   },
   {
     id: 3,
-    name: "亲子游乐",
-    navpath: "../../modules/Parenting/pages/index/index",
-    desc: "亲子开心乐园"
+    name: "美容美发",
+    navpath: "../../modules/Beauty/pages/index/index",
+    desc: "美容美发"
   },
   {
     id: 4,
@@ -34,11 +34,5 @@ export const list = [
     name: "小城酒店",
     navpath: "../../modules/Hotel/pages/index/index",
     desc: "舒适干净定位"
-  },
-  {
-    id: 6,
-    name: "美容美发",
-    navpath: "../../modules/Beauty/pages/index/index",
-    desc: "美容美发"
   }
 ]

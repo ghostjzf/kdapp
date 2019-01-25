@@ -37,8 +37,8 @@
       "independent": true
     },
     {
-      "root": "modules/Parenting",
-      "name": "parenting",
+      "root": "modules/Beauty",
+      "name": "beauty",
       "pages": [
         "pages/index/index"
       ],
@@ -55,14 +55,6 @@
     {
       "root": "modules/Hotel",
       "name": "hotel",
-      "pages": [
-        "pages/index/index"
-      ],
-      "independent": true
-    },
-    {
-      "root": "modules/Beauty",
-      "name": "beauty",
       "pages": [
         "pages/index/index"
       ],
