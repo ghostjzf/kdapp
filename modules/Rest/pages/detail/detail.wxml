@@ -1,0 +1,26 @@
+<view class="detail">
+  <image class='img' src='http://172.25.6.117:9999/api/customer{{detail.image}}?phoneno={{detail.phoneno}}' mode="aspectFill"></image>
+  <view class='content'>
+    <view class='info'>
+      <view class='store-name'>{{detail.name}}</view>
+      <view class='pay-level'>
+        <text>消费水平：</text>
+        <text>￥{{detail.consumption}}/人</text>
+      </view>
+      <view class='score'>
+        <text class='score-item'>综合评分：</text>
+        <text class='score-item'>9.4分</text>
+      </view>
+      <view class='address'>地址：{{detail.address}}</view>
+    </view>
+
+    <view class='recommend'>
+      <view class='title'>精品推荐</view>
+      <scroll-view class="scroll-view" scroll-x style="width: 100%">
+        <view class="item" wx:for="{{list}}" wx:key="{{index}}" d bindtap='preview'>
+          <image class='img' src='http://172.25.6.117:9999/api/customer/public/images/store/recommend/{{item}}?phoneno={{detail.phoneno}}' mode="aspectFill"></image>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

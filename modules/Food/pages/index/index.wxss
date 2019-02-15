@@ -43,6 +43,7 @@
 
 .info .title {
   margin-bottom: 40rpx;
+  font-size: 32rpx;
 }
 
 .info .address {

@@ -1,18 +1,17 @@
 <view class="container">
   <scroll-view class="scroll-view" scroll-x style="width: 100%">
-    <view class='nav-item' wx:for="{{navlist}}" wx:key="{{index}}">{{item.name}}</view>
+    <view class='nav-item {{item.active ? "nav-item-active" : ""}}' wx:for="{{navlist}}" wx:key="{{index}}" data-idx='{{index}}' data-type='{{item.pid}},{{item.cid}}' bindtap='select'>{{item.name}}</view>
   </scroll-view>
 
   <view class='list'>
     <view class='list-item' wx:for="{{list}}" wx:key="{{index}}" data-item='{{item}}' bindtap='detailView'>
       <view class='img-container'>
-        <image class='img' src='http://172.25.6.91:9999/api/customer{{item.image}}?phoneno={{item.phoneno}}' mode="aspectFill"></image>
+        <image class='img' src='http://172.25.6.117:9999/api/customer{{item.image}}?phoneno={{item.phoneno}}' mode="aspectFill"></image>
       </view>
       <view class='info'>
         <view class='title'>{{item.name}}</view>
         <view>
           <text class='address'>{{item.address}}</text>
-          <text class='types'>{{item.type}}</text>
         </view>
       </view>
     </view>

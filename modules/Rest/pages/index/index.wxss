@@ -9,11 +9,19 @@
   display: flex;
   white-space: nowrap; 
   -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  border-top: 1px #ececec solid;
 }
 .nav-item {
    display: inline-block;
    padding: 6px 20rpx;
    font-size: 32rpx;
+}
+
+.nav-item-active {
+  color: #fff;
+  background-color: red;
 }
 
 .list-item {

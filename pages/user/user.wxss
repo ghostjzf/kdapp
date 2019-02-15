@@ -1,1 +1,46 @@
 /* pages/user/user.wxss */
+page{
+  background-color: #f8f8f8;
+}
+
+.head{
+  overflow: hidden;
+  background-color: rgba(255, 94, 0, 0.822);
+  padding: 40rpx;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20rpx auto;
+}
+
+.username {
+  text-align: center;
+}
+
+.content {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.item {
+  padding: 30rpx 20rpx;
+  border-bottom: 1px #ececec dashed;
+  position: relative;
+}
+
+.item::after {
+  content: "";
+  display: block;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  position: absolute;
+  right: 20rpx;
+  transform: translateY(-50%) rotate(45deg);
+}

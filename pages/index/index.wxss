@@ -9,6 +9,7 @@ page {
 
 .home-bg {
   width: 100%;
+  height: 460rpx;
 }
 
 .home-nav {

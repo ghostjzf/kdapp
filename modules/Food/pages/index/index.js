@@ -28,7 +28,7 @@ Page({
 
   getList() {
     http.get(API.storeList, {
-      type: "餐饮"
+      type: "1,1"
     }).then(resp => {
       console.log(resp);
 

@@ -8,47 +8,52 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navlist: [
-      {
-        name: "全部"
-      },
-      {
-        name: "KTV"
-      },
-      {
-        name: "网咖"
-      },
-      {
-        name: "电影院"
-      },
-      {
-        name: "台球厅"
-      },
-      {
-        name: "电玩"
-      },
-      {
-        name: "酒吧"
-      },
-      {
-        name: "公园"
-      },
-      {
-        name: "旅行"
-      },
-      {
-        name: "钓鱼"
-      }
-    ],
+    navlist: [],
     list: []
   },
 
-  getList() {
-    http.get(API.storeList, {
-      type: "休闲娱乐"
-    }).then(resp => {
-      console.log(resp);
+  // 详情
+  detailView(ev) {
+    const detail = ev.currentTarget.dataset.item
 
+    wx.navigateTo({
+      url: '../detail/detail?detail=' + JSON.stringify(detail),
+    })
+  },
+
+  select(e) {
+    const idx = e.currentTarget.dataset.idx;
+    const type = e.currentTarget.dataset.type;
+
+    const navlist = this.data.navlist.map((item, index) => {
+      idx === index ? item.active = true : item.active = false
+
+      return item
+    })
+
+    this.setData({navlist}, () => {
+      this.getList(type)
+    })
+  },
+
+  getNavList() {
+    http.get(API.types, {
+      type: "3,1"
+    }).then(resp => {
+      this.setData({
+        navlist: resp.data.map(item => {
+          return item.pid === 3 && item.cid === 1 ? { ...item, active: true } : { ...item, active: false }
+        }).filter(item => item.pid === 3)
+      })
+    }).catch(error => {
+
+    })
+  },
+
+  getList(type) {
+    http.get(API.storeList, {
+      type: type ? type : "3,1"
+    }).then(resp => {
       this.setData({
         list: resp.data
       })
@@ -61,6 +66,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getNavList();
     this.getList();
   },
 
