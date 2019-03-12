@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/user/user",
-    "modules/Detail/detail"
+    "pages/carts/index",
+    "pages/business/index",
+    "pages/classify/index"
   ],
   "subpackages": [
     {
@@ -69,7 +71,17 @@
     {
       "root": "modules/Feedback",
       "name": "feedback",
-      "pages": ["pages/index/index"],
+      "pages": [
+        "pages/index/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "modules/Spike",
+      "name": "spike",
+      "pages": [
+        "index/index"
+      ],
       "independent": true
     }
   ],
@@ -83,6 +95,18 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/carts/index",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/business/index",
+        "text": "商家"
       },
       {
         "pagePath": "pages/user/user",

@@ -1,0 +1,14 @@
+<view class='container'>
+  <scroll-view class="scroll-view" scroll-x style="width: 100%">
+    <view class='nav-item {{item.active ? "nav-item-active" : ""}}' wx:for="{{navlist}}" wx:key="{{index}}">
+      <view>{{item.time}}</view>
+      <view>{{status[item.status]}}</view>
+    </view>
+  </scroll-view>
+  <view>距离本场结束还有40:35</view>
+  <view class='list'>
+    <view class='list-item'>
+
+    </view>
+  </view>
+</view>

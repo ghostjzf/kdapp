@@ -1,38 +1,26 @@
 export const list = [
   {
     id: 0,
-    name: "美食诱惑",
-    navpath: "../../modules/Food/pages/index/index",
-    desc: "汇集各种美食"
+    name: "整点秒杀",
+    navpath: "../../modules/Spike/index/index",
+    desc: "限时优惠购物"
   },
   {
     id: 1,
-    name: "健康养生",
-    navpath: "../../modules/Health/pages/index/index",
-    desc: "养生之道乐在其中"
+    name: "我要拼团",
+    navpath: "../../modules/Hotel/pages/index/index",
+    desc: "便宜大家占"
   },
   {
     id: 2,
-    name: "休闲娱乐",
-    navpath: "../../modules/Rest/pages/index/index",
-    desc: "放空一下自己"
+    name: "服务预约",
+    navpath: "../../modules/Hotel/pages/index/index",
+    desc: "在线服务预约"
   },
   {
     id: 3,
-    name: "美容美发",
-    navpath: "../../modules/Beauty/pages/index/index",
-    desc: "美容美发"
-  },
-  {
-    id: 4,
-    name: "精美礼物",
-    navpath: "../../modules/Gift/pages/index/index",
-    desc: "超赞节日礼物"
-  },
-  {
-    id: 5,
-    name: "小城酒店",
+    name: "签到",
     navpath: "../../modules/Hotel/pages/index/index",
-    desc: "舒适干净定位"
+    desc: "在线服务预约"
   }
 ]

@@ -1,5 +1,4 @@
-// const HOST = "http://172.25.6.162:9999"; 
-const HOST = "http://172.25.6.117:9999";
+const HOST = "http://172.25.4.90:9999";
 
 class Http {
   state = {

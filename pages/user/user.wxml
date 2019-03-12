@@ -9,6 +9,7 @@
   </view>
   <view class='content'>
     <view class='item'>积分商城</view>
+    <view class='item'>商家入驻</view>
     <view class='item' bindtap='feedback'>意见反馈</view>
   </view>
 </view>

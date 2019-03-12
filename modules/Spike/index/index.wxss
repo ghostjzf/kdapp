@@ -1,0 +1,23 @@
+.continer {}
+
+.scroll-view {
+  width: 100%;
+  display: flex;
+  white-space: nowrap; 
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.nav-item {
+   display: inline-block;
+   padding: 6px 20rpx;
+   font-size: 32rpx;
+   text-align: center;
+   color: #fff;
+   background-color: #222222;
+}
+
+.nav-item-active {
+  color: #fff;
+  background-color: red;
+}
